@@ -13,13 +13,13 @@ const NavBar = () => {
   return (
     <div
       className="container-fluid"
-      // style={{
-      //   background: "linear-gradient(to top,#ffffff, #feeeee)",
-      // }}
+      style={{
+        background: "linear-gradient(to top,#ffffff, #feeeee)",
+      }}
     >
       <div className="row" style={{ backgroundColor: "#ed1c24" }}>
         <div
-          className="col-lg-6 col-md-12 "
+          className="col-lg-6 col-md-12 d-flex justify-content-left align-items-left "
           style={{ backgroundColor: "#ed1c24" }}
         >
           <div
@@ -85,59 +85,83 @@ const NavBar = () => {
       <br />
       <div
         className="row"
-        style={{
-          background: "linear-gradient(to top,#ffffff, #feeeee)",
-        }}
+        style={
+          {
+            // marginTop: "6rem",
+            // background: "linear-gradient(to top,#ffffff, #feeeee)",
+            // marginBottom: "4rem",
+          }
+        }
       >
         <div
           className="col-lg-6 col-md-12  d-flex justify-content-center align-items-center"
           // lg={6}
           // md={6}
           // sm={12}
+          // style={{ backgroundColor: "red" }}
         >
           <div>
             <Typography>
               <h1
                 style={{
                   fontSize: "60px",
+                  // fontFamily: "Railway",
+
+                  // backgroundColor: "black",
                 }}
               >
-                Nothing is More
-                <br /> Important Then
-                <strong style={{ color: "#ed1c24" }}>
-                  Truth <br />
-                  In a World
-                </strong>
-                That Lies
+                <b>
+                  Nothing is More
+                  <br /> Important Then
+                  <strong style={{ color: "#ed1c24" }}>
+                    Truth <br />
+                    In a World
+                  </strong>
+                  That Lies
+                </b>
               </h1>
             </Typography>
           </div>
         </div>
         <div
-          className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+          className="col-lg-6 col-md-12 px-lg-6 "
+          // style={{ marginTop: "6rem" }}
           lg={6}
           // md={6}
         >
           <div
+            className="col"
             style={{
               // background: "lightgreen",
               // height: "100px",
               position: "relative",
+              // width: "100%",
+              // marginBottom: "8rem",
+              // marginTop: "8rem",
+              // marginBottom: "8rem",
             }}
           >
             <img
               src={Artwork}
               alt="img2"
-              className="img"
+              className="img mb-4 "
               width="100%"
-              height="50%"
+              height="500"
+              // marginTop="88rem"
               viewBox="0 0 500 500"
+              // style={{
+              //   // position: "absolute",
+              //   top: 0,
+              //   left: 0,
+              //   width: "100%",
+              //   height: "auto",
+              // }}
             />
           </div>
         </div>
       </div>
       <br />
-      <div className="row">
+      <div className="row" style={{ marginTop: "4rem" }}>
         <div
           className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
           lg={6}
@@ -155,6 +179,7 @@ const NavBar = () => {
         </div>
         <div
           className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+          style={{ marginTop: "4rem" }}
           lg={6}
         >
           <div>
@@ -167,17 +192,19 @@ const NavBar = () => {
             // }
             >
               <h1>
-                <strong>Our</strong>{" "}
-                <strong style={{ color: "#ed1c24" }}>mission---------</strong>
+                <b>
+                  {" "}
+                  <strong>Our</strong>{" "}
+                  <strong style={{ color: "#ed1c24" }}>mission</strong>
+                </b>
               </h1>
               <br />
-              <br />
-              <strong>
-                We bring truth and transparency to a World filled woth lies. Use
-                our app as your <br /> tool for knowledge and equip yourself
-                with the information you need to make <br /> wise decision i any
-                aspect of your life as relationships, business etc.
-              </strong>
+              {/* <strong> */}
+              We bring truth and transparency to a World filled woth lies. Use
+              our app as your <br /> tool for knowledge and equip yourself with
+              the information you need to make <br /> wise decision i any aspect
+              of your life as relationships, business etc.
+              {/* </strong> */}
               <br />
               <br />
               <br />
@@ -199,27 +226,44 @@ const NavBar = () => {
         </div>
       </div>
       <br />
-      <div className="row">
+      <div className="row" style={{ marginTop: "8rem" }}>
         <div className="col-lg-6 col-md-12 ">
-          <div className="col d-flex justify-content-center align-items-center">
+          <div
+            className="col d-flex justify-content-center align-items-center"
+            // style={{ display: "flex", alignItems: "center" }}
+          >
             <Typography
             // style={{
             //   // backgroundColor: "yellow",
             //   marginTop: "10rem",
             // }}
             >
+              {/* <div style={{ display: "flex", alignItems: "center" }}> */}
               <h1>
-                <strong>How it</strong>{" "}
-                <strong style={{ color: "#ed1c24" }}>Work ---------</strong>
+                <b>
+                  <span>
+                    <strong>How it </strong>
+                    <strong style={{ color: "#ed1c24" }}>Work</strong>
+                  </span>
+                  {/* <div
+                      style={{
+                        flex: "1",
+                        borderTop: "1px solid #000",
+                        marginLeft: "10px",
+                        marginRight: "900px",
+                      }}
+                    ></div> */}
+                </b>
               </h1>
+              {/* </div> */}
               <br />
-              <br />
-              <strong>
-                We bring truth and transparency to a World filled woth lies. Use
-                our app as your <br /> tool for knowledge and equip yourself
-                with the information you need to make <br /> wise decision i any
-                aspect of your life as relationships, business etc.
-              </strong>
+              {/* <br /> */}
+              {/* <strong> */}
+              We bring truth and transparency to a World filled woth lies. Use
+              our app as <br /> tool for knowledge and equip yourself with the
+              information you need to make <br /> wise decision i any aspect of
+              your life as relationships, business etc.
+              {/* </strong> */}
               <br />
               <br />
               <br />
@@ -240,7 +284,10 @@ const NavBar = () => {
             </Typography>
           </div>
         </div>
-        <div className="col-lg-6 col-md-12 ">
+        <div
+          className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center "
+          // style={{ marginTop: "8rem" }}
+        >
           <div>
             <img
               src={Frame}
@@ -248,23 +295,27 @@ const NavBar = () => {
               className="img"
               width="80%"
               height="80%"
+              // marginRight="4rem"
               viewBox="0 0 500 500"
             />
           </div>
         </div>
       </div>
       <br />
-      <div className="row">
+      <div className="row" style={{ marginTop: "6rem" }}>
         <div className="col-lg-12 col-md-12 text-center" lg={12}>
           <div>
             <h1>
-              <strong>How it</strong>
+              <strong style={{ color: "black" }}> Video How</strong>
               <strong style={{ color: "#ed1c24" }}> App Work</strong>
             </h1>
           </div>
         </div>
         <div className="col-lg-12 col-md-12 " lg={12}>
-          <div className="col d-flex justify-content-center align-items-center">
+          <div
+            className="col d-flex justify-content-center align-items-center "
+            style={{ marginTop: "2rem" }}
+          >
             <img
               src={videoimg}
               alt="img 2"
@@ -281,11 +332,17 @@ const NavBar = () => {
         className="row"
         style={{
           backgroundColor: "black",
+          marginTop: "8rem",
         }}
       >
-        <div className="col-lg-12 col-md-12 text-center" lg={12}>
-          <div style={{ color: "white" }}>
-            <h1>Download the App</h1> <br />
+        <div className="col-lg-12 col-md-12 text-center">
+          <div
+            style={{ color: "white", marginTop: "4rem", marginBottom: "4rem" }}
+          >
+            <h1>
+              <b>Download the App</b>
+            </h1>
+            <br />
             The Gate of Truth is a metaphysical structure which float in an
             endless white expanse, with two doors that
             <br />
@@ -293,6 +350,55 @@ const NavBar = () => {
             them.
             <br />
             <br />
+            {/* <div className="justify-content-center">
+              <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <img src="/path/to/image1.jpg" alt="Image 1" fluid />
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <img src="/path/to/image2.jpg" alt="Image 2" fluid />
+              </div>
+
+             
+            </div> */}
+            {/* <div
+              className=" col-lg-12 "
+              // style={{ backgroundColor: "GrayText" }}
+            >
+              <div className="col-lg-6" style={{ backgroundColor: "yellow" }}>
+                <button
+                  className="btn  boderRadius-8  my-sm-0 "
+                  style={{
+                    backgroundColor: "black",
+                    color: "black",
+                    borderRadius: "0.5rem",
+
+                    // marginRight: "2rem",
+
+                    width: "13rem",
+                  }}
+                  type="LOGIN"
+                >
+                  <img src={googlemask} alt="img 2" width="100%" height={50} />
+                </button>
+              </div>
+              <div className="col-lg-6 " style={{ backgroundColor: "yellow" }}>
+                <button
+                  className="btn  boderRadius-8  my-sm-0 "
+                  style={{
+                    backgroundColor: "black",
+                    color: "black",
+                    borderRadius: "0.5rem",
+
+                    // marginRight: "2rem",
+
+                    width: "13rem",
+                  }}
+                  type="LOGIN"
+                >
+                  <img src={appmask} alt="img 2" width="100%" height={50} />
+                </button>
+              </div>
+            </div> */}
             <div
               className=" col-lg-12 d-flex justify-content-center align-items-center button-container"
               // style={{ backgroundColor: "GrayText" }}

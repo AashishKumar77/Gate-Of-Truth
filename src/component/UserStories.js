@@ -20,11 +20,14 @@ import AppleIcon from "@mui/icons-material/Apple";
 function UserStories() {
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row " style={{ marginTop: "6rem" }}>
         <div className="col-lg-12 col-md-12 col-sm-12 text-center">
           <div className="col">
-            <h1 style={{ marginTop: "2rem" }}>
-              User <strong style={{ color: "#ed1c24" }}> Stories</strong>
+            <h1 style={{ fontSize: "60px" }}>
+              <b>
+                {" "}
+                User <strong style={{ color: "#ed1c24" }}> Stories</strong>
+              </b>
             </h1>
           </div>
         </div>
@@ -34,13 +37,16 @@ function UserStories() {
           <div className="col">
             <Typography
               style={{
+                // marginTop: "4rem",
                 // backgroundColor: "red",
                 // marginTop: "22rem",
-                fontSize: "22px",
+                fontSize: "15px",
               }}
             >
               <h1>
-                GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                <b>
+                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                </b>
               </h1>
               The Gate of Truth is a metaphysical structure which float in an{" "}
               <br />
@@ -56,6 +62,7 @@ function UserStories() {
         </div>
         <div
           className="col d-flex justify-content-center align-items-center"
+          // style={{ marginTop: "4rem" }}
           lg={6}
         >
           <div className="col">
@@ -74,6 +81,7 @@ function UserStories() {
       <div className="row">
         <div
           className="col-lg-6 d-flex justify-content-center align-items-center"
+          style={{ marginTop: "4rem" }}
           lg={6}
         >
           <div className="col">
@@ -89,18 +97,22 @@ function UserStories() {
         </div>
         <div
           className="col-lg-6  d-flex justify-content-center align-items-center"
+          //
           // lg={6}
         >
-          <div className="col">
+          <div className="col" style={{ marginTop: "8rem" }}>
             <Typography
               style={{
+                marginTop: "4rem",
                 // backgroundColor: "red",
                 // marginTop: "22rem",
-                fontSize: "22px",
+                fontSize: "15px",
               }}
             >
               <h1>
-                GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                <b>
+                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                </b>
               </h1>
               The Gate of Truth is a metaphysical structure which float in an{" "}
               <br />
@@ -115,16 +127,20 @@ function UserStories() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row" style={{ marginTop: "4rem" }}>
         <div
           className="col-lg-6  d-flex justify-content-center align-items-center"
+          style={{
+            marginTop: "4rem",
+            // backgroundColor: "yellow",
+          }}
           lg={6}
         >
           <div
             className="col"
             style={
               {
-                // background: "lightgreen"
+                // background: "lightgreen",
               }
             }
           >
@@ -132,11 +148,13 @@ function UserStories() {
               style={{
                 // backgroundColor: "red",
                 // marginTop: "22rem",
-                fontSize: "22px",
+                fontSize: "15px",
               }}
             >
               <h1>
-                GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                <b>
+                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                </b>
               </h1>
               The Gate of Truth is a metaphysical structure which float in an{" "}
               <br />
@@ -152,6 +170,7 @@ function UserStories() {
         </div>
         <div
           className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center "
+          style={{ marginTop: "4rem" }}
           lg={6}
         >
           <div className="col">
@@ -166,27 +185,29 @@ function UserStories() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row" style={{ marginTop: "8rem" }}>
         <div className="col-lg-6 col-md-12 col-sm-12 justify-content-center align-items-center ">
           <div
             className="col"
+            style={{ marginTop: "4rem" }}
             // style={{ background: "lightgreen" }}
           >
             <Typography
               style={{
                 // backgroundColor: "yellow",
                 // marginTop: "24rem",
-                // marginLeft: "3rem",
-                fontSize: "22px",
+                marginLeft: "4rem",
+                fontSize: "15px",
+                // fontFamily: "Railway",
               }}
             >
               <h1 style={{ fontSize: "3rem" }}>
-                Create Your <br />{" "}
+                <b>Create Your</b> <br />
                 <strong style={{ color: "#ed1c24" }}>Own Story</strong>
               </h1>
-              The Gate of Truth is a metaphysical structure which float in an{" "}
+              The Gate of Truth is a metaphysical structure which float in an
               <br />
-              endless white expanse, with two doors that appear like a pair of{" "}
+              endless white expanse, with two doors that appear like a pair
               <br />
               giant stone tablets with a mural engraved on them.
               <br />
@@ -195,11 +216,11 @@ function UserStories() {
               <br />
               <br />
               <div
-                className=" col-lg-12 col-md-6 d-flex justify-content-center align-items-center button-container "
+                className=" col-lg-12 col-md-12 d-flex justify-content-left align-items-left button-container "
                 // style={{ backgroundColor: "yellow" }}
               >
                 <button
-                  className="btn btn-outline-danger boderRadius-8 m-2  mt-2 my-2 my-sm-0"
+                  className="btn btn-outline-danger boderRadius-8 mt-2 my-2 my-sm-0"
                   style={{
                     backgroundColor: "black",
                     color: "white",
@@ -212,8 +233,13 @@ function UserStories() {
                   type="LOGIN"
                 >
                   <GoogleIcon fontSize="large" />
-                  <small>Available on the</small> <br />
-                  <strong>Google Play</strong>
+                  <small>
+                    <b>Available on the</b>
+                  </small>{" "}
+                  <br />
+                  <strong>
+                    <b>Google Play</b>
+                  </strong>
                 </button>
                 {/* <br /> */}
                 <button
@@ -223,6 +249,8 @@ function UserStories() {
                     color: "white",
                     borderRadius: "0.5rem",
                     width: "13rem",
+                    fontFamily: "Inter",
+                    fontSize: "normal",
                     // height: "5rem",
                     // marginRight: "2rem",
                     // marginBottom: "8rem",
@@ -230,8 +258,13 @@ function UserStories() {
                   type="LOGIN"
                 >
                   <AppleIcon fontSize="large" />
-                  <small>Download on the</small> <br />
-                  <strong>App Store</strong>
+                  <small>
+                    <b>Download on the</b>
+                  </small>{" "}
+                  <br />
+                  <strong>
+                    <b>App Store</b>
+                  </strong>
                 </button>
               </div>
             </Typography>
@@ -239,8 +272,9 @@ function UserStories() {
         </div>
         <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center ">
           <div
-            className="col"
+            className="col d-flex justify-content-center align-items-center "
             style={{
+              marginTop: "4rem",
               // background: "lightgreen",
               position: "relative",
             }}
@@ -271,7 +305,7 @@ function UserStories() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row" style={{ marginTop: "6rem" }}>
         <div className="col" lg={12}>
           <div className="col" style={{ backgroundColor: "#feeeef" }}>
             <Typography
@@ -306,8 +340,14 @@ function UserStories() {
                     className="col-lg-12 col-md-12 col-sm-12"
                     // style={{ backgroundColor: "#feeeef" }}
                   >
-                    <h3 style={{ color: "#ed1c24", margin: "1rem" }}>
-                      why do you need an FAQ ?
+                    <h3
+                      style={{
+                        color: "#ed1c24",
+                        margin: "1rem",
+                        // fontSize: "15px",
+                      }}
+                    >
+                      <b>why do you need an FAQ ?</b>
                     </h3>
                     {/* <br /> */}
                     <Typography
@@ -318,18 +358,21 @@ function UserStories() {
                       }}
                     >
                       <p style={{ marginLeft: "1rem" }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incident ut dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud
-                        <br />
-                        exercitation ultamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duls aute irure dolor in
-                        reprehenderit in voluptate velit esse cilium dolore eu
-                        fugiat nulla pariatur.
-                        <br />
-                        Excepteur sint occaecat cupidatal non proident, sunt in
-                        cuipa qui offcial deserunt molit anim id est laborum
-                        <br />
+                        <b style={{ fontSize: "15px" }}>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incident ut dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud
+                          <br />
+                          exercitation ultamco laboris nisi ut aliquip ex ea
+                          commodo consequat. Duls aute irure dolor in
+                          reprehenderit in voluptate velit esse cilium dolore eu
+                          fugiat nulla pariatur.
+                          <br />
+                          Excepteur sint occaecat cupidatal non proident, sunt
+                          in cuipa qui offcial deserunt molit anim id est
+                          laborum
+                          <br />
+                        </b>
                       </p>
                     </Typography>
                   </div>
@@ -350,7 +393,7 @@ function UserStories() {
                     // style={{ backgroundColor: "yellow" }}
                   >
                     <h3 style={{ color: "#ed1c24", margin: "1rem" }}>
-                      why do you need an FAQ ?
+                      <b>why do you need an FAQ ?</b>
                     </h3>
                   </div>
                 </div>
@@ -370,7 +413,7 @@ function UserStories() {
                     // style={{ backgroundColor: "yellow" }}
                   >
                     <h3 style={{ color: "#ed1c24", margin: "1rem" }}>
-                      why do you need an FAQ ?
+                      <b>why do you need an FAQ ?</b>
                     </h3>
                   </div>
                 </div>
@@ -383,7 +426,11 @@ function UserStories() {
       <br />
       <div
         className="row"
-        style={{ backgroundColor: "#ed1c24", marginBottom: "3rem" }}
+        style={{
+          backgroundColor: "#ed1c24",
+          marginBottom: "3rem",
+          marginTop: "5rem",
+        }}
       >
         <div
           className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center "
@@ -405,8 +452,8 @@ function UserStories() {
           />
           {/* </ul> */}
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12" lg={6} md={6} sm={12}>
-          <ul className="nav justify-content-center">
+        <div className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <ul className="nav ">
             <li className="nav-item">
               <a
                 className="nav-link active"
@@ -439,10 +486,16 @@ function UserStories() {
             </li>
           </ul>
         </div>
-        <div className="container-fluid  ">
-          <div class="row">
+        <br />
+        {/* <br />
+        <br /> */}
+        <div className="container-fluid">
+          <div
+            class="row"
+            style={{ border: "1px solid #ffffff", marginBottom: "4rem" }}
+          >
             <div
-              class="col-lg-6 justify-content-center"
+              class="col-lg-6 justify-content-center ,"
               style={{ backgroundColor: "#ed1c24" }}
             >
               <ul className="nav ">
@@ -484,33 +537,45 @@ function UserStories() {
               </ul>
             </div>
             <div class="col-lg-6" style={{ backgroundColor: "#ed1c24" }}>
-              <ul className="nav justify-content-center ">
+              <ul className="nav float-right  ">
+                {/* justify-content-center */}
                 <li className="nav-item">
                   <a className="nav-link active" href="#">
-                    <Avatar style={{ backgroundColor: "white" }}>
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
                       <FacebookIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <Avatar style={{ backgroundColor: "white" }}>
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
                       <TwitterIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <Avatar style={{ backgroundColor: "white" }}>
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
                       {" "}
                       <LinkedInIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
                 </li>
-
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <Avatar style={{ backgroundColor: "white" }}>
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
                       <GoogleIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>

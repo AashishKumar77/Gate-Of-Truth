@@ -4,7 +4,8 @@ import Navbar from "./component/Navbar";
 import UserStories from "./component/UserStories";
 // import Home from "./component/Home";
 // import HomeBS from "./component/HomeBS";
-// import ButTonBS from "./component/ButtonBS";
+// import ButtonBS from "./component/ButtonBS";
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       {/* <UserStories /> */}
       {/* <Home></Home> */}
       {/* <HomeBS></HomeBS> */}
+      {/* <ButtonBS></ButtonBS> */}
     </div>
   );
 }
