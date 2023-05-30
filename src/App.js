@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Navbar from "./component/Navbar";
+// import Navbs from "./GateofTruthImages/Navbs";
+import UserStories from "./component/UserStories";
+// import Home from "./component/Home";
+// import HomeBS from "./component/HomeBS";
+// import ButTonBS from "./component/ButtonBS";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {/* <Navbs /> */}
+      {/* <UserStories /> */}
+      {/* <Home></Home> */}
+      {/* <HomeBS></HomeBS> */}
     </div>
   );
 }
