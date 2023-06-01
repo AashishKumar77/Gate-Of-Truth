@@ -2,12 +2,20 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
+import circle from "../GateofTruthImages/circle.svg";
+import plus from "../GateofTruthImages/plus.svg";
 function ButTonBS() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-lg-6 col-md-12 " xs={12} md={12}>
-          <div>
+      <div className="row" style={{ backgroundColor: "yellow" }}>
+        <div className="col-lg-12">
+          <img src={circle} alt="img 2" width="100%" height={50} />
+          <img src={plus} alt="img 2" width="100%" height={50} />
+        </div>
+      </div>
+      {/* <div className="row">
+        <div className="col-lg-6 col-md-12  " xs={12} md={12}>
+          <div className="col float">
             <Button
               className="btn btn-outline-danger boderRadius-8 mt-2 my-2 my-sm-0"
               style={{
@@ -61,7 +69,7 @@ function ButTonBS() {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     // <div className="container">
     //   <div className="row">

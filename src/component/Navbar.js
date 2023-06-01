@@ -5,10 +5,12 @@ import mission from "../GateofTruthImages/mission.svg";
 import Frame from "../GateofTruthImages/Frame.svg";
 import videoimg from "../GateofTruthImages/videoimg.svg";
 import Artwork from "../GateofTruthImages/Artwork.svg";
-import { Typography } from "@mui/material";
+import { ToggleButton, Typography } from "@mui/material";
 import appmask from "../GateofTruthImages/appmask.svg";
 import googlemask from "../GateofTruthImages/googlemask.svg";
 import UserStories from "./UserStories";
+import FormatAlignRightIcon from "@mui/icons-material/FormatAlignRight";
+import MenuIcon from "@mui/icons-material/Menu";
 const NavBar = () => {
   return (
     <div
@@ -19,7 +21,7 @@ const NavBar = () => {
     >
       <div className="row" style={{ backgroundColor: "#ed1c24" }}>
         <div
-          className="col-lg-6 col-md-12 d-flex justify-content-left align-items-left "
+          className="col-lg-6 col-md-6 col-sm- col-xs-6 d-flex justify-content-left align-items-left "
           style={{ backgroundColor: "#ed1c24" }}
         >
           <div
@@ -30,11 +32,34 @@ const NavBar = () => {
               }
             }
           >
-            <img src={logo} alt="img 2" width="100%" height={70} />
+            <img
+              // className="img float-right"
+              src={logo}
+              alt="img 2"
+              width="100%"
+              height={70}
+            />
+            {/* <ToggleButton
+              value="right"
+              aria-label="right aligned"
+              sx={{
+                float: "right",
+              }}
+            > */}
+            {/* <FormatAlignRightIcon
+              fontSize="large"
+              sx={{
+                float: "right",
+                justifyContent: "center",
+              }}
+            /> */}
+            {/* </ToggleButton> */}
+            {/* <ToggleButton value="right" aria-label="right aligned" /> */}
+            {/* <MenuIcon sx={{ float: "right" }} /> */}
           </div>
         </div>
         <div
-          className="col-lg-6 col-md-12 d-none d-md-block"
+          className="col-lg-6 col-md-12 d-none d-lg-block"
           style={{ backgroundColor: "#ed1c24" }}
         >
           <div
@@ -103,19 +128,20 @@ const NavBar = () => {
           <div>
             <Typography>
               <h1
+                // style={{ fontFamily: "calibri" }}
                 style={{
-                  fontSize: "60px",
-                  // fontFamily: "Railway",
+                  fontSize: "70px",
+                  fontFamily: "calibri",
 
                   // backgroundColor: "black",
                 }}
               >
                 <b>
-                  Nothing is More
+                  Nothing Is More
                   <br /> Important Then
                   <strong style={{ color: "#ed1c24" }}>
                     Truth <br />
-                    In a World
+                    In a World{" "}
                   </strong>
                   That Lies
                 </b>
@@ -146,7 +172,7 @@ const NavBar = () => {
               alt="img2"
               className="img mb-4 "
               width="100%"
-              height="500"
+              height="100%"
               // marginTop="88rem"
               viewBox="0 0 500 500"
               // style={{
@@ -161,7 +187,7 @@ const NavBar = () => {
         </div>
       </div>
       <br />
-      <div className="row" style={{ marginTop: "4rem" }}>
+      <div className="row" style={{ marginTop: "6rem" }}>
         <div
           className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
           lg={6}
@@ -171,7 +197,7 @@ const NavBar = () => {
               src={mission}
               alt="img 2"
               className="img"
-              width="70%"
+              width="100%"
               height="70%"
               viewBox="0 0 500 500"
             />
@@ -179,7 +205,7 @@ const NavBar = () => {
         </div>
         <div
           className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
-          style={{ marginTop: "4rem" }}
+          style={{ marginTop: "6rem" }}
           lg={6}
         >
           <div>
@@ -191,20 +217,22 @@ const NavBar = () => {
             //   }
             // }
             >
-              <h1>
+              <h1 style={{ fontFamily: "calibri" }}>
                 <b>
                   {" "}
                   <strong>Our</strong>{" "}
-                  <strong style={{ color: "#ed1c24" }}>mission</strong>
+                  <strong style={{ color: "#ed1c24", fontFamily: "calibri" }}>
+                    mission
+                  </strong>
                 </b>
               </h1>
               <br />
-              {/* <strong> */}
-              We bring truth and transparency to a World filled woth lies. Use
-              our app as your <br /> tool for knowledge and equip yourself with
-              the information you need to make <br /> wise decision i any aspect
-              of your life as relationships, business etc.
-              {/* </strong> */}
+              <strong style={{ fontFamily: "calibri" }}>
+                We bring truth and transparency to a World filled woth lies. Use
+                our app as your <br /> tool for knowledge and equip yourself
+                with the information you need to make <br /> wise decision i any
+                aspect of your life as relationships, business etc.
+              </strong>
               <br />
               <br />
               <br />
@@ -216,6 +244,7 @@ const NavBar = () => {
                   borderRadius: "4rem",
                   width: "9rem",
                   marginRight: "2rem",
+                  fontFamily: "calibri",
                 }}
                 type="LOGIN"
               >
@@ -239,7 +268,7 @@ const NavBar = () => {
             // }}
             >
               {/* <div style={{ display: "flex", alignItems: "center" }}> */}
-              <h1>
+              <h1 style={{ fontFamily: "calibri" }}>
                 <b>
                   <span>
                     <strong>How it </strong>
@@ -258,12 +287,12 @@ const NavBar = () => {
               {/* </div> */}
               <br />
               {/* <br /> */}
-              {/* <strong> */}
-              We bring truth and transparency to a World filled woth lies. Use
-              our app as <br /> tool for knowledge and equip yourself with the
-              information you need to make <br /> wise decision i any aspect of
-              your life as relationships, business etc.
-              {/* </strong> */}
+              <strong style={{ fontFamily: "calibri" }}>
+                We bring truth and transparency to a World filled woth lies. Use
+                our app as <br /> tool for knowledge and equip yourself with the
+                information you need to make <br /> wise decision i any aspect
+                of your life as relationships, business etc.
+              </strong>
               <br />
               <br />
               <br />
@@ -275,6 +304,7 @@ const NavBar = () => {
                   borderRadius: "4rem",
                   width: "9rem",
                   marginRight: "2rem",
+                  fontFamily: "calibri",
                   // marginBottom: "8rem",
                 }}
                 type="LOGIN"
@@ -286,14 +316,14 @@ const NavBar = () => {
         </div>
         <div
           className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center "
-          // style={{ marginTop: "8rem" }}
+          style={{ marginTop: "8rem" }}
         >
           <div>
             <img
               src={Frame}
               alt="img 2"
               className="img"
-              width="80%"
+              width="100%"
               height="80%"
               // marginRight="4rem"
               viewBox="0 0 500 500"
@@ -305,7 +335,7 @@ const NavBar = () => {
       <div className="row" style={{ marginTop: "6rem" }}>
         <div className="col-lg-12 col-md-12 text-center" lg={12}>
           <div>
-            <h1>
+            <h1 style={{ fontFamily: "calibri" }}>
               <strong style={{ color: "black" }}> Video How</strong>
               <strong style={{ color: "#ed1c24" }}> App Work</strong>
             </h1>
@@ -320,7 +350,7 @@ const NavBar = () => {
               src={videoimg}
               alt="img 2"
               className="img "
-              width="50%"
+              width="100%"
               height="50%"
               viewBox="0 0 500 500"
               // style={{ paddingLeft: "15rem" }}
@@ -339,15 +369,17 @@ const NavBar = () => {
           <div
             style={{ color: "white", marginTop: "4rem", marginBottom: "4rem" }}
           >
-            <h1>
+            <h1 style={{ fontFamily: "calibri" }}>
               <b>Download the App</b>
             </h1>
             <br />
-            The Gate of Truth is a metaphysical structure which float in an
-            endless white expanse, with two doors that
-            <br />
-            appear like a pair of giant stone tablets with a mural engraved on
-            them.
+            <strong style={{ fontFamily: "calibri" }}>
+              The Gate of Truth is a metaphysical structure which float in an
+              endless white expanse, with two doors that
+              <br />
+              appear like a pair of giant stone tablets with a mural engraved on
+              them.
+            </strong>
             <br />
             <br />
             {/* <div className="justify-content-center">
