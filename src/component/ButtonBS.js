@@ -1,18 +1,124 @@
-import { Button, Typography } from "@mui/material";
-import React from "react";
+import {
+  AppBar,
+  Box,
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import React, { useState } from "react";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import circle from "../GateofTruthImages/circle.svg";
 import plus from "../GateofTruthImages/plus.svg";
-function ButTonBS() {
+import MenuIcon from "@mui/icons-material/Menu";
+// function ButTonBS() {
+// const ButTonBS = () => {
+//   const [anchorEl, setAnchorEl] = useState(null);
+
+//   const handleClick = (event) => {
+//     setAnchorEl(event.currentTarget);
+//   };
+
+//   const handleClose = () => {
+//     setAnchorEl(null);
+//   };
+const ButTonBS = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <div className="container">
-      <div className="row" style={{ backgroundColor: "yellow" }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            onClick={handleClick}
+            sx={{ display: { sm: "none", xs: "block" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Your App
+          </Typography>
+          <Stack
+            direction={{ xs: "column", sm: "column", md: "row" }}
+            spacing={2}
+            sx={{ display: { xs: "block", sm: "block", md: "flex" } }}
+          >
+            <Typography variant="body1">Link 1</Typography>
+            <Typography variant="body1">Link 2</Typography>
+            <Typography variant="body1">Link 3</Typography>
+          </Stack>
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+          >
+            <MenuItem onClick={handleClose}>Menu Item 1</MenuItem>
+            <MenuItem onClick={handleClose}>Menu Item 2</MenuItem>
+            <MenuItem onClick={handleClose}>Menu Item 3</MenuItem>
+          </Menu>
+        </Toolbar>
+      </AppBar>
+      {/* <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            onClick={handleClick}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Your App
+          </Typography>
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+          >
+            <MenuItem onClick={handleClose}>Menu Item 1</MenuItem>
+            <MenuItem onClick={handleClose}>Menu Item 2</MenuItem>
+            <MenuItem onClick={handleClose}>Menu Item 3</MenuItem>
+          </Menu>
+        </Toolbar>
+      </AppBar> */}
+
+      {/* <div className="row" style={{ backgroundColor: "yellow" }}>
         <div className="col-lg-12">
           <img src={circle} alt="img 2" width="100%" height={50} />
           <img src={plus} alt="img 2" width="100%" height={50} />
         </div>
-      </div>
+      </div> */}
       {/* <div className="row">
         <div className="col-lg-6 col-md-12  " xs={12} md={12}>
           <div className="col float">
@@ -176,5 +282,5 @@ function ButTonBS() {
     //   </div>
     // </div>
   );
-}
+};
 export default ButTonBS;

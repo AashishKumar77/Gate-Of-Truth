@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Button, Divider, Typography } from "@mui/material";
+import { Avatar, Button, Divider, Stack, Typography } from "@mui/material";
 import logo from "../GateofTruthImages/logo.png";
 import Group11 from "../GateofTruthImages/Group 11.svg";
 import appmask from "../GateofTruthImages/appmask.svg";
@@ -31,16 +31,22 @@ function UserStories() {
       <div className="row align-items-start " style={{ marginTop: "6rem" }}>
         <div className="col-lg-12 col-md-12 col-sm-12 text-center">
           <div className="col">
-            <h1 style={{ fontSize: "60px", fontFamily: "calibri" }}>
-              {" "}
-              <b>
-                User <strong style={{ color: "#ed1c24" }}> Stories</strong>
-              </b>
+            <h1 style={{ fontSize: "60px", fontFamily: "Raleway" }}>
+              {/* <b> */}
+              User <span style={{ color: "#ed1c24" }}> Stories</span>
+              {/* </b> */}
             </h1>
           </div>
         </div>
       </div>
-      <div className="row" style={{ marginTop: "4rem" }}>
+      <div
+        className="row"
+        style={
+          {
+            // marginTop: "4rem"
+          }
+        }
+      >
         <div className="col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center align-items-center ">
           <div className="col">
             <Typography
@@ -49,24 +55,25 @@ function UserStories() {
                 // backgroundColor: "red",
                 // marginTop: "22rem",
                 fontSize: "15px",
+                // marginLeft: "5rem",
               }}
             >
-              <h1 style={{ fontFamily: "calibri" }}>
+              <h1 style={{ fontFamily: "Raleway" }}>
                 <b>
-                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
+                  GATE OF <span style={{ color: "#ed1c24" }}> TRUTHS</span>
                 </b>
               </h1>
-              <strong style={{ fontFamily: "calibri" }}>
-                The Gate of Truth is a metaphysical structure which float in an{" "}
-                <br />
-                endless white expanse, with two doors that appear like a pair of{" "}
-                <br />
-                giant stone tablets with a mural engraved on them. There doesn't{" "}
-                <br />
-                appear to be anything behind the structure, but when the doors{" "}
-                <br />
-                open it reveals a dimension of information behind them.{" "}
-              </strong>
+              <span style={{ fontFamily: "Raleway" }}>
+                The Gate of Truth is a metaphysical structure which float in an
+                {/* <br /> */}
+                endless white expanse, with two doors that appear like a pair of
+                {/* <br /> */}
+                giant stone tablets with a mural engraved on them. There doesn't
+                {/* <br /> */}
+                appear to be anything behind the structure, but when the doors
+                {/* <br /> */}
+                open it reveals a dimension of information behind them.
+              </span>
             </Typography>
           </div>
         </div>
@@ -91,7 +98,11 @@ function UserStories() {
       <div className="row">
         <div
           className="col-lg-6 d-flex justify-content-center align-items-center"
-          style={{ marginTop: "4rem" }}
+          style={
+            {
+              // marginTop: "4rem"
+            }
+          }
           lg={6}
         >
           <div className="col">
@@ -110,42 +121,55 @@ function UserStories() {
           //
           // lg={6}
         >
-          <div className="col" style={{ marginTop: "8rem" }}>
-            <Typography
+          <div
+            className="col"
+            style={
+              {
+                // marginTop: "8rem"
+              }
+            }
+          >
+            {/* <Typography
               style={{
                 marginTop: "4rem",
                 // backgroundColor: "red",
                 // marginTop: "22rem",
                 fontSize: "15px",
+                // marginLeft: "5rem",
               }}
-            >
-              <h1 style={{ fontFamily: "calibri" }}>
-                <b>
-                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
-                </b>
-              </h1>
-              <strong style={{ fontFamily: "calibri" }}>
-                The Gate of Truth is a metaphysical structure which float in an{" "}
-                <br />
-                endless white expanse, with two doors that appear like a pair of{" "}
-                <br />
-                giant stone tablets with a mural engraved on them. There doesn't{" "}
-                <br />
-                appear to be anything behind the structure, but when the doors{" "}
-                <br />
-                open it reveals a dimension of information behind them.
-              </strong>
-            </Typography>
+            > */}
+            <h1 style={{ fontFamily: "Raleway" }}>
+              <b>
+                GATE OF <span style={{ color: "#ed1c24" }}> TRUTHS</span>
+              </b>
+            </h1>
+            <span style={{ fontFamily: "Raleway" }}>
+              The Gate of Truth is a metaphysical structure which float in an
+              endless white expanse, with two doors that appear like a pair of
+              giant stone tablets with a mural engraved on them. There doesn't
+              appear to be anything behind the structure, but when the doors
+              open it reveals a dimension of information behind them.
+            </span>
+            {/* </Typography> */}
           </div>
         </div>
       </div>
-      <div className="row" style={{ marginTop: "4rem" }}>
+      <div
+        className="row"
+        style={
+          {
+            // marginTop: "4rem"
+          }
+        }
+      >
         <div
           className="col-lg-6  d-flex justify-content-center align-items-center"
-          style={{
-            marginTop: "4rem",
-            // backgroundColor: "yellow",
-          }}
+          style={
+            {
+              // marginTop: "4rem",
+              // backgroundColor: "yellow",
+            }
+          }
           lg={6}
         >
           <div
@@ -156,35 +180,36 @@ function UserStories() {
               }
             }
           >
-            <Typography
+            {/* <Typography
               style={{
                 // backgroundColor: "red",
                 // marginTop: "22rem",
                 fontSize: "15px",
+                // marginLeft: "5rem",
               }}
-            >
-              <h1 style={{ fontFamily: "calibri" }}>
-                <b>
-                  GATE OF <strong style={{ color: "#ed1c24" }}> TRUTHS</strong>
-                </b>
-              </h1>
-              <strong style={{ fontFamily: "calibri" }}>
-                The Gate of Truth is a metaphysical structure which float in an{" "}
-                <br />
-                endless white expanse, with two doors that appear like a pair of{" "}
-                <br />
-                giant stone tablets with a mural engraved on them. There doesn't{" "}
-                <br />
-                appear to be anything behind the structure, but when the doors{" "}
-                <br />
-                open it reveals a dimension of information behind them.
-              </strong>
-            </Typography>
+            > */}
+            <h1 style={{ fontFamily: "Raleway" }}>
+              <b>
+                GATE OF <span style={{ color: "#ed1c24" }}> TRUTHS</span>
+              </b>
+            </h1>
+            <span style={{ fontFamily: "Raleway" }}>
+              The Gate of Truth is a metaphysical structure which float in an
+              endless white expanse, with two doors that appear like a pair of
+              giant stone tablets with a mural engraved on them. There doesn't
+              appear to be anything behind the structure, but when the doors
+              open it reveals a dimension of information behind them.
+            </span>
+            {/* </Typography> */}
           </div>
         </div>
         <div
           className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center "
-          style={{ marginTop: "4rem" }}
+          style={
+            {
+              // marginTop: "4rem"
+            }
+          }
           lg={6}
         >
           <div className="col">
@@ -199,153 +224,81 @@ function UserStories() {
           </div>
         </div>
       </div>
-      <div className="row" style={{ marginTop: "8rem" }}>
+      <div
+        className="row"
+        style={
+          {
+            // marginTop: "8rem"
+          }
+        }
+      >
         <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
           <div
             className="col"
-            style={{ marginTop: "4rem" }}
+            // style={{ marginTop: "4rem" }}
             // style={{ background: "lightgreen" }}
           >
-            <Typography
+            {/* <Typography
               style={{
                 // backgroundColor: "yellow",
                 // marginTop: "24rem",
-                marginLeft: "4rem",
+                // marginLeft: "5rem",
                 fontSize: "15px",
                 // fontFamily: "Railway",
               }}
+            > */}
+            <h1
+              style={{
+                fontSize: "3rem",
+                fontFamily: "Raleway",
+              }}
             >
-              <h1 style={{ fontSize: "3rem", fontFamily: "calibri" }}>
-                <b>Create Your</b> <br />
-                <strong style={{ color: "#ed1c24" }}>Own Story</strong>
-              </h1>
-              <strong style={{ fontFamily: "calibri" }}>
-                The Gate of Truth is a metaphysical structure which float in an
-                <br />
-                endless white expanse, with two doors that appear like a pair
-                <br />
-                giant stone tablets with a mural engraved on them.
-              </strong>
-              <br />
-              <br />
-              <strong style={{ color: "#ed1c24" }}>Download the App</strong>
-              <br />
-              <br />
-              <div className="row d-flex justify-content-center align-items-center">
-                <div
-                  className="col-lg-12 col-md-12    "
-                  // style={{ backgroundColor: "yellow" }}
-                >
-                  <div>
-                    <Button>
-                      <img
-                        src={googleplay}
-                        alt="img 2"
-                        className="img-fluid"
-                        width="100%"
-                        height="100%"
-                        viewBox="0 0 500 500"
-                      />
-                      {/* className="btn btn-outline-danger boderRadius-8 mt-2 my-2 my-sm-0"
-                      style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        borderRadius: "0.5rem",
-                        width: "11rem",
-                        // height: "3rem",
-                      }}
-                      type="LOGIN"
-                    >
-                      <GoogleIcon fontSize="large" />
-                      <small>Available on the</small>
-                      <br />
-                      <br />
-                      <strong>
-                        <b>Google Play</b>
-                      </strong> */}
-                    </Button>
-                    <Button>
-                      {" "}
-                      <img
-                        src={app}
-                        alt="img 2"
-                        className="img-fluid"
-                        width="100%"
-                        height="100%"
-                        viewBox="0 0 500 500"
-                      />
-                    </Button>
-                    {/*
-                    <Button
-                      className="btn btn-outline-danger boderRadius-8 m-2 mt-2 my-2 my-sm-0"
-                      style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        borderRadius: "0.5rem",
-                        width: "11rem",
-                        // height: "3rem",
-                        // fontFamily: "Inter",
-                        fontSize: "normal",
-                      }}
-                      type="LOGIN"
-                    >
-                      <AppleIcon fontSize="large" />
-                      <small>Download on the</small>
-                      <br />
-                      <strong>App Store</strong>
-                    </Button> */}
-                  </div>
+              <b>
+                {" "}
+                Create Your <br />
+                <span style={{ color: "#ed1c24" }}>Own Story</span>
+              </b>
+            </h1>
+            <span style={{ fontFamily: "Raleway" }}>
+              The Gate of Truth is a metaphysical structure which float in an
+              endless white expanse, with two doors that appear like a pair
+              giant stone tablets with a mural engraved on them.
+            </span>
+            <br />
+            <br />
+            <b style={{ color: "#ed1c24" }}>Download the App</b>
+            <br />
+            <br />
+            <div className="row d-flex justify-content-center align-items-center">
+              <div
+                className="col-lg-12 col-md-12    "
+                // style={{ backgroundColor: "yellow" }}
+              >
+                <div>
+                  <Button>
+                    <img
+                      src={googleplay}
+                      alt="img 2"
+                      className="img-fluid"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 500 500"
+                    />
+                  </Button>
+                  <Button>
+                    <img
+                      src={app}
+                      alt="img 2"
+                      className="img-fluid"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 500 500"
+                    />
+                  </Button>
                 </div>
               </div>
-              {/* <div
-                className=" col-lg-12 col-md-12 d-flex justify-content-left align-items-left button-container "
-             
-              >
-                <button
-                  className="btn btn-outline-danger boderRadius-8 mt-2 my-2 my-sm-0"
-                  style={{
-                    backgroundColor: "black",
-                    color: "white",
-                    borderRadius: "0.5rem",
-                    width: "13rem",
-                  
-                  }}
-                  type="LOGIN"
-                >
-                  <GoogleIcon fontSize="large" />
-                  <small>
-                    <b>Available on the</b>
-                  </small>{" "}
-                  <br />
-                  <strong>
-                    <b>Google Play</b>
-                  </strong>
-                </button>
-         
-                <button
-                  className="btn btn-outline-danger boderRadius-8 m-2 mt-2 my-2 my-sm-0"
-                  style={{
-                    backgroundColor: "black",
-                    color: "white",
-                    borderRadius: "0.5rem",
-                    width: "13rem",
-                    fontFamily: "Inter",
-                    fontSize: "normal",
-                  
-                  }}
-                  type="LOGIN"
-                >
-                  <AppleIcon fontSize="large" />
-                  <small>
-                    <b>Download on the</b>
-                  </small>{" "}
-                  <br />
-                  <strong>
-                    <b>App Store</b>
-                  </strong>
-                </button>
-              </div> */}
-            </Typography>
+            </div>
+            {/* </Typography> */}
           </div>
         </div>
         <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center ">
@@ -358,28 +311,6 @@ function UserStories() {
             }}
           >
             <img src={iphn} alt="img 2" width="50%" height="20%" />
-            {/* <img
-              src={Maskgroup}
-              fluid
-              alt="img 2"
-              className="img"
-              // width="100%"
-              // height="100%"
-              // viewBox="0 0 500 500"
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "350px",
-                width: "500px",
-              }}
-            />
-            <img
-              src={iphone}
-              // fluid
-              style={{ height: "400px", width: "690px" }}
-            /> */}
           </div>
         </div>
       </div>
@@ -395,32 +326,33 @@ function UserStories() {
           className="col-lg-12 mb-8"
           style={{
             // marginTop: "6rem",
-            marginBottom: "8rem",
+
             backgroundColor: "#feeeef",
           }}
         >
           <div
             className="col"
-            style={{ backgroundColor: "#feeeef", fontFamily: "calibri" }}
+            style={{ backgroundColor: "#feeeef", fontFamily: "Raleway" }}
           >
             <Typography
               style={{
+                // marginBottom: "8rem",
                 marginTop: "3rem",
                 backgroundColor: "#feeeef",
                 // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
                 // borderRadius: "0.4rem",
               }}
             >
-              <h1 style={{ fontSize: "2rem", fontFamily: "calibri" }}>
-                <strong style={{ color: "#ed1c24" }}>Still Have {""}</strong>
-                <strong style={{ color: "black" }}>Questions ?</strong>
+              <h1 style={{ fontSize: "2rem", fontFamily: "Raleway" }}>
+                <span style={{ color: "#ed1c24" }}>Still Have {""}</span>
+                <span style={{ color: "black" }}>Questions ?</span>
               </h1>
             </Typography>
             <br />
 
             <div
               className="col-lg-12 col-sm-12 col-md-12"
-              // style={{ backgroundColor: "#feeeef" }}
+              // style={{ marginTop: "4rem" }}
             >
               <Typography
                 style={{
@@ -442,27 +374,10 @@ function UserStories() {
                         // fontSize: "15px",
                       }}
                     >
-                      <b style={{ fontFamily: "calibri" }}>
+                      <b style={{ fontFamily: "Raleway" }}>
                         why do you need an FAQ ?
                       </b>
 
-                      {/* <CircleOutlinedIcon
-                        fontSize="large"
-                        backgroundColor="tranparent"
-                      >
-                        <RemoveIcon
-                          color="primary"
-                          sx={{
-                            float: "right",
-                            justifyContent: "center",
-                            backgroundColor: "black",
-                          }}
-                        />
-                      </CircleOutlinedIcon> */}
-                      {/* <Avatar sx={{ float: "right", justifyContent: "center" }}>
-                        <RemoveIcon />
-                      </Avatar> */}
-                      {/* <Avatar> */}
                       <RemoveCircleOutlineIcon
                         fontSize="large"
                         sx={{
@@ -481,7 +396,7 @@ function UserStories() {
                         // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
                       }}
                     >
-                      <p style={{ marginLeft: "1rem", fontFamily: "calibri" }}>
+                      <p style={{ marginLeft: "1rem", fontFamily: "Raleway" }}>
                         {/* <b style={{ fontSize: "15px" }}> */}
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incident ut dolore magna aliqua.
@@ -519,7 +434,7 @@ function UserStories() {
                       style={{
                         color: "#ed1c24",
                         margin: "1rem",
-                        fontFamily: "calibri",
+                        fontFamily: "Raleway",
                       }}
                     >
                       <b>why do you need an FAQ ?</b>
@@ -581,7 +496,7 @@ function UserStories() {
                       style={{
                         color: "#ed1c24",
                         margin: "1rem",
-                        fontFamily: "calibri",
+                        fontFamily: "Raleway",
                       }}
                     >
                       <b>why do you need an FAQ ?</b>
@@ -618,43 +533,68 @@ function UserStories() {
             width={200}
           />
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-          <ul className="nav " style={{ fontFamily: "calibri" }}>
-            <li className="nav-item">
+        <div className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center float-right">
+          <Stack
+            // className="nav float-right "
+            direction={{
+              xs: "column",
+              sm: "column",
+              md: "row",
+            }}
+            spacing={2}
+            sx={{
+              display: { xs: "block", sm: "block", md: "flex" },
+            }}
+          >
+            <Typography variant="body1">
               <a
                 className="nav-link active"
                 href="#"
-                style={{ color: "white" }}
+                style={{ color: "white", fontFamily: "Raleway" }}
               >
                 With Us
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+            </Typography>
+            <Typography variant="body1">
+              <a
+                className="nav-link"
+                href="#"
+                style={{ color: "white", fontFamily: "Raleway" }}
+              >
                 Services
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+            </Typography>
+            <Typography variant="body1">
+              <a
+                className="nav-link"
+                href="#"
+                style={{ color: "white", fontFamily: "Raleway" }}
+              >
                 Portfolio
               </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+            </Typography>
+            <Typography variant="body1">
+              <a
+                className="nav-link"
+                href="#"
+                style={{ color: "white", fontFamily: "Raleway" }}
+              >
                 Career
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#" style={{ color: "white" }}>
+            </Typography>
+            <Typography variant="body1">
+              <a
+                className="nav-link"
+                href="#"
+                style={{ color: "white", fontFamily: "Raleway" }}
+              >
                 Contact Us
               </a>
-            </li>
-          </ul>
+            </Typography>
+          </Stack>
         </div>
         <br />
-        {/* <br />
-        <br /> */}
+
         <Divider
           component="div"
           sx={{ width: "100%", backgroundColor: "white" }}
@@ -668,52 +608,203 @@ function UserStories() {
             }}
           >
             <div
-              class="col-lg-6 justify-content-center ,"
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-right align-items-center "
+              xs={6}
               style={{ backgroundColor: "#ed1c24" }}
             >
-              <ul className="nav " style={{ fontFamily: "calibri" }}>
-                <li className="nav-item">
+              <Stack
+                className="nav float-right "
+                direction={{ xs: "column", sm: "column", md: "row" }}
+                spacing={4}
+                sx={{
+                  display: { xs: "block", sm: "block", md: "flex" },
+                }}
+              >
+                <Typography variant="body1">
                   <a
-                    className="nav-link active"
+                    className="nav-link active "
                     href="#"
-                    style={{ color: "white", fontSize: "10px" }}
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
                   >
                     <LocationOnIcon fontSize="large" />
                     Address
                     <br /> Nagarbhavi Bangalore
                   </a>
-                </li>
-                <li className="nav-item">
+                </Typography>
+                <Typography variant="body1">
                   <a
-                    className="nav-link"
+                    className="nav-link active"
                     href="#"
-                    style={{ color: "white", fontSize: "10px" }}
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
                   >
-                    <CallIcon fontSize="large" />
-                    PHONE
-                    <br />
-                    +91-963258741
+                    <LocationOnIcon fontSize="large" />
+                    Address
+                    <br /> Nagarbhavi Bangalore
                   </a>
-                </li>
-                <li className="nav-item">
+                </Typography>
+                <Typography variant="body1">
                   <a
                     className="nav-link"
                     href="#"
-                    style={{ color: "white", fontSize: "10px" }}
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
                   >
                     <EmailIcon fontSize="large" />
                     EMAIL
                     <br />
                     gateoftruths@gmail.com
                   </a>
-                </li>
-              </ul>
+                </Typography>
+              </Stack>
             </div>
+            {/* <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-lg-none d-md-none d-flex justify-content-right align-items-center "
+              xs={6}
+              style={{ backgroundColor: "#ed1c24" }}
+            >
+              <Stack
+                className="nav float-center "
+                direction={{ xs: "column", sm: "column", md: "row" }}
+                spacing={4}
+                sx={{
+                  display: { xs: "block", sm: "block", md: "flex" },
+                }}
+              >
+                <Typography variant="body1">
+                  <a
+                    className="nav-link active "
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <LocationOnIcon fontSize="large" />
+                    Address
+                    <br /> Nagarbhavi Bangalore
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a
+                    className="nav-link active"
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <LocationOnIcon fontSize="large" />
+                    Address
+                    <br /> Nagarbhavi Bangalore
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <EmailIcon fontSize="large" />
+                    EMAIL
+                    <br />
+                    gateoftruths@gmail.com
+                  </a>
+                </Typography>
+              </Stack>
+            </div> */}
+            {/* <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-lg-none d-md-none d-flex justify-content-right align-items-center "
+              xs={6}
+              style={{ backgroundColor: "#ed1c24" }}
+            >
+              <Stack
+                className="nav float-right "
+                direction={{ xs: "column", sm: "column", md: "row" }}
+                spacing={4}
+                sx={{
+                  display: { xs: "block", sm: "block", md: "flex" },
+                }}
+              >
+                <Typography variant="body1">
+                  <a
+                    className="nav-link active "
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <LocationOnIcon fontSize="large" />
+                    Address
+                    <br /> Nagarbhavi Bangalore
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a
+                    className="nav-link active"
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <LocationOnIcon fontSize="large" />
+                    Address
+                    <br /> Nagarbhavi Bangalore
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "10px",
+                      fontFamily: "Raleway",
+                    }}
+                  >
+                    <EmailIcon fontSize="large" />
+                    EMAIL
+                    <br />
+                    gateoftruths@gmail.com
+                  </a>
+                </Typography>
+              </Stack>
+            </div> */}
 
-            <div class="col-lg-6" style={{ backgroundColor: "#ed1c24" }}>
-              <ul className="nav float-right  ">
-                {/* justify-content-center */}
-                <li className="nav-item">
+            <div
+              class="col-lg-6  col-md-6 col-sm-6 col-xs-6 .d-none d-lg-block  "
+              xs={6}
+              style={{ backgroundColor: "#ed1c24" }}
+            >
+              <Stack
+                className="nav float-right "
+                direction={{ xs: "column", sm: "column", md: "row" }}
+                // spacing={2}
+                sx={{
+                  display: { xs: "block", sm: "block", md: "flex" },
+                }}
+              >
+                <Typography variant="body1">
                   <a className="nav-link active" href="#">
                     <Avatar
                       sx={{ width: 50, height: 50 }}
@@ -722,8 +813,8 @@ function UserStories() {
                       <FacebookIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
-                </li>
-                <li className="nav-item">
+                </Typography>
+                <Typography variant="body1">
                   <a className="nav-link" href="#">
                     <Avatar
                       sx={{ width: 50, height: 50 }}
@@ -732,20 +823,18 @@ function UserStories() {
                       <TwitterIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
-                </li>
-                <li className="nav-item">
+                </Typography>
+                <Typography variant="body1">
                   <a className="nav-link" href="#">
                     <Avatar
                       sx={{ width: 50, height: 50 }}
                       style={{ backgroundColor: "white" }}
                     >
-                      {" "}
                       <LinkedInIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
-                </li>
-
-                <li className="nav-item">
+                </Typography>
+                <Typography variant="body1">
                   <a className="nav-link" href="#">
                     <Avatar
                       sx={{ width: 50, height: 50 }}
@@ -754,12 +843,68 @@ function UserStories() {
                       <GoogleIcon style={{ color: "#ed1c24" }} />
                     </Avatar>
                   </a>
-                </li>
-              </ul>
+                </Typography>
+              </Stack>
             </div>
+            {/* <div
+              class="col-lg-6 d-lg-none   col-sm-6 col-xs-6  d-sm-block   "
+              xs={6}
+              style={{ backgroundColor: "#ed1c24" }}
+            >
+              <Stack
+                className="nav float-left "
+                direction={{ xs: "column", sm: "column", md: "row" }}
+                // spacing={2}
+                sx={{
+                  display: { xs: "block", sm: "block", md: "flex" },
+                }}
+              >
+                <Typography variant="body1">
+                  <a className="nav-link active" href="#">
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
+                      <FacebookIcon style={{ color: "#ed1c24" }} />
+                    </Avatar>
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a className="nav-link" href="#">
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
+                      <TwitterIcon style={{ color: "#ed1c24" }} />
+                    </Avatar>
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a className="nav-link" href="#">
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
+                      <LinkedInIcon style={{ color: "#ed1c24" }} />
+                    </Avatar>
+                  </a>
+                </Typography>
+                <Typography variant="body1">
+                  <a className="nav-link" href="#">
+                    <Avatar
+                      sx={{ width: 50, height: 50 }}
+                      style={{ backgroundColor: "white" }}
+                    >
+                      <GoogleIcon style={{ color: "#ed1c24" }} />
+                    </Avatar>
+                  </a>
+                </Typography>
+              </Stack>
+            </div> */}
+
             <Divider
               component="div"
-              sx={{ width: "78%", backgroundColor: "white" }}
+              sx={{ width: "79%", backgroundColor: "white" }}
             />
           </div>
         </div>
