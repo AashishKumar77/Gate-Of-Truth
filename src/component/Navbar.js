@@ -241,9 +241,10 @@ const NavBar = () => {
             <img
               src={Artwork}
               alt="img2"
-              className="img mb-4 "
+              className="img"
               width="100%"
               height="100%"
+              marginTop="theme.spacing(8)"
               // marginTop="-18rem"
               viewBox="0 0 500 500"
             />

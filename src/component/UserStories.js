@@ -516,10 +516,11 @@ function UserStories() {
       <br />
 
       <div
-        className="row "
+        className="row"
         style={{
           backgroundColor: "#ed1c24",
           marginBottom: "3rem",
+          // margin: "-3",
           // marginTop: "5rem",
         }}
       >
@@ -533,7 +534,7 @@ function UserStories() {
             width={200}
           />
         </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center float-right">
+        <div className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
           <Stack
             // className="nav float-right "
             direction={{
@@ -608,12 +609,12 @@ function UserStories() {
             }}
           >
             <div
-              class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-right align-items-center "
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center align-items-center "
               xs={6}
               style={{ backgroundColor: "#ed1c24" }}
             >
               <Stack
-                className="nav float-right "
+                className="nav float-center "
                 direction={{ xs: "column", sm: "column", md: "row" }}
                 spacing={4}
                 sx={{
@@ -792,16 +793,24 @@ function UserStories() {
             </div> */}
 
             <div
-              class="col-lg-6  col-md-6 col-sm-6 col-xs-6 .d-none d-lg-block  "
+              class="col-lg-6  col-md-6 col-sm-6 col-xs-6 .d-none d-lg-block d-flex justify-content-center align-items-center  "
               xs={6}
-              style={{ backgroundColor: "#ed1c24" }}
+              style={{
+                backgroundColor: "#ed1c24",
+              }}
             >
               <Stack
-                className="nav float-right "
+                className="nav float-center "
                 direction={{ xs: "column", sm: "column", md: "row" }}
-                // spacing={2}
+                // spacing={}
                 sx={{
-                  display: { xs: "block", sm: "block", md: "flex" },
+                  display: {
+                    xs: "block",
+                    sm: "block",
+                    md: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  },
                 }}
               >
                 <Typography variant="body1">
@@ -904,7 +913,7 @@ function UserStories() {
 
             <Divider
               component="div"
-              sx={{ width: "79%", backgroundColor: "white" }}
+              sx={{ width: "66%", backgroundColor: "white" }}
             />
           </div>
         </div>
